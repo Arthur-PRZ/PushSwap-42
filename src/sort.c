@@ -16,11 +16,9 @@ void	add_b(t_list *push_node, t_list **list_b, t_list **list_a)
 {
 	int	pos_a;
 	int	pos_b;
-	int	size_b;
 
 	pos_a = pos_target(*list_a, push_node);
 	pos_b = pos_target(*list_b, push_node->target);
-	size_b = ft_lstsize_ps(*list_b);
 	reverse_top(pos_a, pos_b, list_a, list_b);
 	reverse_bot(pos_a, pos_b, list_a, list_b);
 	pb(list_a, list_b);
